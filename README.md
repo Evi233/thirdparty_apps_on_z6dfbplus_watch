@@ -21,7 +21,7 @@
 
 如果显示`Error:no emulators/devices found`，请检查您的连接，或安装驱动
 
-接下来，在命令行内输入`冻结桌面的命令`，回车
+接下来，在命令行内输入`adb shell pm hide com.xtc.i3launcher`，回车
 
 您的手表会黑屏，不要惊慌
 
@@ -31,7 +31,7 @@ z7及以下：在命令行内输入`adb shell am start com.qualcomm.qti.qmmi/com
 
 z8及以上：在命令行内输入`adb shell am start com.qualcomm.qti.qmmi/com.qualcomm.qti.qmmi.framework.MainActivity`，回车
 
-在命令行内输入`解冻桌面命令`，回车，重启，您的设备的桌面就会恢复正常
+在命令行内输入`adb shell pm unhide com.xtc.i3launcher`，回车，重启，您的设备的桌面就会恢复正常
 
 接下来，将你想要安装的安装包放到adb工具包的文件夹里面
 
