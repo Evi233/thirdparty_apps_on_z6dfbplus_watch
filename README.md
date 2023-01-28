@@ -5,7 +5,9 @@
 
 首先，您需要一个adb工具包
 
-然后解压文件“qmmi.zip”
+然后解压文件“platform-tools_r33.0.3-windows.zip”
+
+解压后的文件夹为adb工具包
 
 打开adb工具包
 
