@@ -1,4 +1,4 @@
-# thirdparty_apps_on_z6dfbplus_watch
+# 如何在z6巅峰版以上的小天才设备上安装第三方应用
 此教程面向有基础人群
 
 将教授您如何在z6巅峰版以上的小天才设备上安装第三方应用
@@ -27,7 +27,26 @@
 
 接下来，请按照您的设备情况来选择
 
-z7及以下：输入`adb shell am start com.qualcomm.qti.qmmi/com.qualcomm.qti.qmmi.framework.MainActivity`，回车
+z7及以下：在命令行内输入`adb shell am start com.qualcomm.qti.qmmi/com.qualcomm.qti.qmmi.framework.MainActivity`，回车
 
-z8及以上：输入`adb shell am start com.qualcomm.qti.qmmi/com.qualcomm.qti.qmmi.framework.MainActivity`，回车
+z8及以上：在命令行内输入`adb shell am start com.qualcomm.qti.qmmi/com.qualcomm.qti.qmmi.framework.MainActivity`，回车
 
+在命令行内输入`解冻桌面命令`，回车，重启，您的设备的桌面就会恢复正常
+
+接下来，将你想要安装的安装包放到adb工具包的文件夹里面
+
+取一个简单的名字
+
+在命令行里输入`adb push 文件名.apk /sdcard/文件名.apk`，回车
+
+在命令行里输入`adb shell`，回车
+
+在命令行里输入`pm install-create`，回车
+
+记下输出的那串数字
+
+在命令行里输入`pm install-write 那串数字 install /sdcard/文件名.apk`，回车
+
+在命令行里输入`pm install-commit 那串数字`，回车
+
+安装成功
